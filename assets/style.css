@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    height: 100vh;
+   align-items: center;
+    justify-content: center;
+    display: flex; 
+    /* background-color: black; */
+}
+
+.weather{
+    color: white;
+    padding: 30px 20px;
+    border-radius: 40px;
+    width: 350px;
+    border: 1px solid white;
+    background: radial-gradient(circle, rgba(251,170,63,1) 22%, rgba(252,70,107,1) 100%);
+    border: 2px solid black;
+}
+
+
+.weather.cold{
+    background: radial-gradient(circle, rgba(69,62,212,1) 2%, rgba(82,205,187,1) 83%);
+}
+
+.search{
+    font-size: 20px;
+    border-radius: 20px;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+    outline: none;  
+    width: 100%;
+    padding: 20px;
+}
+
+.content{
+    margin-top: 50px;
+    text-align: center;
+    visibility: visible;
+}
+
+.time{
+    margin: 20px 0 ;
+    font-size: 20px;
+}
+
+.temperature{
+    margin: 20px 0;
+    font-size: 65px;
+}
+
+.value{
+    border-radius: 10px;
+    padding: 10px 20px;
+    /* background-color: white; */
+}
+
+
+.short-desc{
+    margin-bottom: 150px;
+    font-size: 30px;
+}
+
+.more-desc{
+    margin: 150px;
+    margin: 10px 0;
+    justify-content: space-between;
+    display: flex;
+}
+
+
+.more-desc div{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.more-desc div i {
+    margin: 5px 0 ;
+}
+
+.modal{
+    background-color: rgba(0, 0, 0, 0.6) ;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+.modal-heading{
+    border-radius: 20px;
+    background-color: red;
+    padding: 20px;
+}
+
+.icon{
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: white;
+    font-size: 30px;
+    right: 3%;
+    top: 5%;
+    position: absolute;
+}
